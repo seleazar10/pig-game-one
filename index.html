@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Pig Game One</title>
+		<link rel="stylesheet" type="text/css" href="./styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<nav id="nav-bar">
+				<button id="btn-one" class="btn">New Game</button>
+				<button id="btn-two" class="btn">Roll dice</button>
+				<button id="btn-three" class="btn">Hold</button>
+			</nav>
+			<div id="container-one">
+				<div id="GameDsplyBox">
+					<section
+						class="gameDisplay player game-sec-one active--player player--0"
+					>
+						<p class="player-numb-header">PLAYER 1</p>
+						<p class="player-one-dice-number dice-number" id="score--0">45</p>
+						<div class="player-one-current-score curr-score">
+							<p>Current</p>
+							<p class="currScore--0">10</p>
+						</div>
+					</section>
+
+					<section class="game-sec-two player light-pink player--1">
+						<p class="player-numb-header">PLAYER 2</p>
+						<p class="player-two-dice-number dice-number" id="score--1">30</p>
+						<div class="player-two-current-score curr-score">
+							<p>Current</p>
+							<p class="currScoreDisplay currScore--1">20</p>
+						</div>
+					</section>
+
+					<img src="./dice-1.png" alt="diceo" class="dice hidden" />
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="./script.js"></script>
+</html>
